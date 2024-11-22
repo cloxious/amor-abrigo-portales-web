@@ -1,0 +1,62 @@
+.faq {
+    max-width: 800px;
+    margin: 2rem auto;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.faq-item {
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #FBECD5;
+    box-shadow: 0 2px 4px rgba(12, 11, 13, 0.1);
+}
+
+.accordion {
+    width: 100%;
+    padding: 1.25rem;
+    border: none;
+    background-color: #0867A0;
+    color: white;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+.accordion:after {
+    content: '+';
+    font-size: 1.5rem;
+    color: white;
+    float: right;
+    margin-left: 1rem;
+}
+
+.accordion.active:after {
+    content: '-';
+}
+
+.accordion:hover {
+    background-color: #0998F6;
+}
+
+.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: white;
+}
+
+.panel.active {
+    max-height: 500px;
+    padding: 1.25rem;
+}
+
+.panel p {
+    margin: 0;
+    color: #0C0B0D;
+    line-height: 1.6;
+}
