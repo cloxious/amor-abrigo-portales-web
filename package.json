@@ -10,5 +10,13 @@
   },
   "devDependencies": {
     "vite": "^5.4.10"
+  },
+  "dependencies": {
+    "-": "^0.0.1",
+    "D": "^1.0.0",
+    "glob": "^11.0.0",
+    "less": "^4.2.0",
+    "vite-plugin-handlebars": "^2.0.0",
+    "vite-plugin-purgecss": "^0.2.12"
   }
 }

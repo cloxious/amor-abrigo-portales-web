@@ -1,13 +1,65 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Galeria de imagenes | Efecto overlay</title>
+    <!--  <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="less/body.less">
+</head>
+
+<body>
+    <div class="galeria">
+        <h1>Galeria Efecto Overlay</h1>
+        <div class="linea"></div>
+        <h3>ALGUNOS DE NUESTROS RESCATES</h3>
+        <div class="contenedor-imagenes">
+            {{#each fotos}}
+            {{>galeria
+            fotos = .
+            }}
+            {{/each}}
+        </div>
+        <div class="linea"></div>
+    </div>
+   <!--  <form id="postForm">
+        <input type="text" id="title" placeholder="Título" required />
+        <textarea id="content" placeholder="Contenido" required></textarea>
+        <button type="submit">Publicar</button>
+    </form>
+
+    <div id="blogPosts"></div> -->
+
+    <section class="publicacion">
+        <h2>CUENTANOS</h2>
+        <form id="articulo">
+            <input type="text" id="titulo" placeholder="Título" required>
+            <textarea id="content" placeholder="Contenido del artículo" required></textarea>
+            <button type="submit">Publicar</button>
+        </form>
+        <h2>Artículos Publicados</h2>
+        <div id="articulos"></div>
+
+        <script>
+            const form = document.getElementById('articulo');
+            const articlesDiv = document.getElementById('articulos');
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                const title = document.getElementById('titulo').value;
+                const content = document.getElementById('content').value;
+
+                const article = document.createElement('div');
+                article.className = 'article';
+                article.innerHTML = `<h2>${title}</h2><p>${content}</p>`;
+                articlesDiv.appendChild(article);
+
+                form.reset();
+            });
+        </script>
+    </section>
+</body>
+
 </html>
