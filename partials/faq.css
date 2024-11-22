@@ -6,18 +6,14 @@
 
 .faq-item {
     margin-bottom: 1rem;
-    border-radius: 8px;
-    overflow: hidden;
-    background-color: #FBECD5;
-    box-shadow: 0 2px 4px rgba(12, 11, 13, 0.1);
+    border: 2px solid #B8857F;
 }
 
 .accordion {
     width: 100%;
-    padding: 1.25rem;
-    border: none;
-    background-color: #0867A0;
-    color: white;
+    padding: 1rem;
+    background-color: white;
+    color: #0C0B0D;
     text-align: left;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -25,34 +21,35 @@
     justify-content: space-between;
     align-items: center;
     font-weight: 600;
+    border: none;
 }
 
 .accordion:after {
     content: '+';
-    font-size: 1.5rem;
-    color: white;
-    float: right;
-    margin-left: 1rem;
+    font-size: 1.25rem;
+    color: #0867A0;
+    transition: transform 0.3s ease;
 }
 
 .accordion.active:after {
-    content: '-';
+    transform: rotate(45deg);
 }
 
 .accordion:hover {
-    background-color: #0998F6;
+    background-color: #FBECD5;
 }
 
 .panel {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
     background-color: white;
 }
 
 .panel.active {
     max-height: 500px;
-    padding: 1.25rem;
+    padding: 1rem;
+    border-top: 1px solid #B8857F;
 }
 
 .panel p {
