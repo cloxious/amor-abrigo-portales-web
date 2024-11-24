@@ -1,13 +1,63 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundación Amor y Abrigo</title>
+  <link rel="stylesheet" href="/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  {{> header}}
+
+  <main>
+    <section class="intro">
+      <h2>¿Quienes Somos?</h2>
+      <p>Una fundación dedicada a rescatar y proteger a los animales en San Pedro Sula y alrededores. Ofreciendoles un lugar, alimentación y atención médica a animalitos que han sufrido maltratos y han sido abandonados.</p>
+    </section>
+
+    <section class="intro">
+      <h2>Nuestra Misión</h2>
+      <p>Proporcionar un refugio seguro y lleno de amor para animales en situación de abandono en San Pedro Sula. Nos dedicamos a rescatar, rehabilitar y reubicar a mascotas en hogares responsables, promoviendo una cultura de respeto, cuidado y protección hacia todos los seres vivos.</p>
+    </section>
+
+    <section class="events">
+      <h2>Nuestros Peluditos</h2>
+      <div class="event-cards">
+        <div class="event-card">
+          <img src="img/nina.png" alt="Nina" />
+          <div class="event-info">
+            <h3>Nina</h3>
+            <p>Desde muy pequeña, fue una perrita muy juguetona hasta que sufrió el dolor de no ser querida y ser golpeada. Nina es una sobreviviente del maltrato y la maldad del hombre, fue lastimada a pesar de ser una perrita llena de amor y energia. Hoy en dia, es una peludita muy fuerte y sana gracias al apoyo de los angelitos de Amor y Abrigo.</p>
+          </div>
+        </div>
+        <div class="event-card">
+          <img src="img/canelo.png" alt="Canelo" />
+          <div class="event-info">
+            <h3>Canelo</h3>
+            <p>Canelo es un perrito que al igual que muchos otros animalitos tuvo una vida dificil, su anterior dueño lo lastimo con un machete e incluso lo dejaba pasar hambre y tenia que buscar alimento en la basura. Y no solo sufria por los maltratos sino tambien por una enfermedad, gracias al refugio Amor y Abrigo encontró un hogar y una familia que le da el amor que siempre debió recibir.</p>
+          </div>
+        </div>
+        <div class="event-card">
+          <img src="https://amoryabrigo.org/wp-content/uploads/2023/03/duquesa1.png" alt="Duquesa" />
+          <div class="event-info">
+            <h3>Duquesa</h3>
+            <p>Duquesa es una perrita que tambien ha pasado por mucho, sus antiguos dueños la dejaron abandonada en un solar abandonado, pasando sol, hambre y sed. Aunque ella esperaba el regreso de ellos, entendió que la habian abandonado. Hasta que llegaron los corazones bondadosos de Amor y Abrigo. Rescatandola y ayudandole a sanar.</p>
+          </div>
+        </div>
+        <div class="event-card">
+          <img src="img/platanito.png" alt="Platanito" />
+          <div class="event-info">
+            <h3>Platanito</h3>
+            <p>Platanito es un caballo rescatado del maltrato de las personas, al igual que muchos caballos que han sido victimas de personas con un corazon malvado. Todos los caballos, yeguas y potrillos viven en el santuario de Sam, que se llama así en honor del primer caballo rescatado y que lastimosamente no pudo sobrevivir.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  {{> footer}}
+
+  <script src="script.js"></script>
+</body>
 </html>
