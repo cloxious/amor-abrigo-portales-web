@@ -397,7 +397,6 @@ nav.active #nav-menu {
   color: #333;
 }
 
-/* Estilos para el equipo */
 .team {
   margin-top: 40px;
 }
@@ -438,15 +437,14 @@ nav.active #nav-menu {
   color: #555;
 }
 
-/* Ajustes responsivos */
 @media (max-width: 768px) {
   .team-cards {
     flex-direction: column;
-    align-items: center; /* Asegura que estén centradas verticalmente */
+    align-items: center; 
   }
 
   .team-card {
-    width: 90%; /* Reduce el ancho para pantallas pequeñas */
+    width: 90%; 
   }
 }
 
