@@ -27,6 +27,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: white;
 }
 
 h1 {
@@ -38,11 +39,11 @@ header {
   background-color: #333;
   color: #fff;
   padding: 1em 2em;
-  position: fixed; 
-  top: 0; 
+  position: fixed;
+  top: 0;
   left: 0;
   right: 0;
-  z-index: 1000; 
+  z-index: 1000;
 }
 
 #header-container {
@@ -74,6 +75,7 @@ header {
     flex-direction: column;
     align-items: flex-start;
   }
+
   #navbar a {
     margin: 0.5em 0;
   }

@@ -2,18 +2,25 @@
     max-width: 800px;
     margin: 2rem auto;
     font-family: system-ui, -apple-system, sans-serif;
+    background-color: #ffe6f0;
+    /* Updated background color */
+    color: rgba(34, 15, 15, 0.808);
+    /* Updated text color */
 }
 
 .faq-item {
     margin-bottom: 1rem;
-    border: 2px solid #B8857F;
+    border: 2px solid #ff007f;
+    /* Updated border color */
 }
 
 .accordion {
     width: 100%;
     padding: 1rem;
-    background-color: white;
-    color: #0C0B0D;
+    background-color: #ff007f;
+    /* Updated background color */
+    color: white;
+    /* Updated text color */
     text-align: left;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -27,7 +34,8 @@
 .accordion:after {
     content: '+';
     font-size: 1.25rem;
-    color: #0867A0;
+    color: white;
+    /* Updated text color */
     transition: transform 0.3s ease;
 }
 
@@ -36,24 +44,28 @@
 }
 
 .accordion:hover {
-    background-color: #FBECD5;
+    background-color: #0056b3;
+    /* Updated hover background color */
 }
 
 .panel {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out, padding 0.3s ease-out;
-    background-color: white;
+    background-color: #ffe6f0;
+    /* Updated background color */
 }
 
 .panel.active {
     max-height: 500px;
     padding: 1rem;
-    border-top: 1px solid #B8857F;
+    border-top: 1px solid #ff007f;
+    /* Updated border color */
 }
 
 .panel p {
     margin: 0;
-    color: #0C0B0D;
+    color: rgba(34, 15, 15, 0.808);
+    /* Updated text color */
     line-height: 1.6;
 }
