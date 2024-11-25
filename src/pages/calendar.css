@@ -62,7 +62,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin: 1em auto;
-  border: 2px solid #ff007f; /* Borde rosado fuerte */
+  border: 2px solid #ff007f;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -71,23 +71,23 @@ th, td {
   padding: 10px;
   width: 14.28%;
   text-align: center;
-  border: 1px solid #ff007f; /* Borde interno rosado fuerte */
-  background-color: #ffe6f0; /* Fondo rosado claro */
+  border: 1px solid #ff007f;
+  background-color: #ffe6f0; 
 }
 
 th {
-  background-color: #ff007f; /* Encabezado rosado fuerte */
+  background-color: #ff007f; 
   color: white;
   font-weight: bold;
 }
 
 td {
-  background-color: #ffe6f0; /* Fondo rosado claro */
+  background-color: #ffe6f0; 
   transition: background-color 0.3s;
 }
 
 td:hover {
-  background-color: #ffb3d9; /* Fondo rosado más intenso al pasar el ratón */
+  background-color: #ffb3d9; 
   cursor: pointer;
 }
 
